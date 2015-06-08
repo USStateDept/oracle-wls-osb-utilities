@@ -8,6 +8,12 @@ import com.bea.wli.config.component.NotFoundException;
 import com.bea.wli.sb.resources.config.XmlEntryDocument;
 import com.bea.wli.sb.resources.xml.XmlRepository;
 
+/**
+ * 
+ * @author Gilberto Holms
+ *
+ */
+//https://gibaholms.wordpress.com/2012/02/23/read-xml-resource-in-oracle-service-bus-11g/
 public class ReadXmlResource {
 
 	public static XmlObject readXml(String xmlRefPath) {
