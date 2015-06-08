@@ -11,9 +11,9 @@ import com.bea.wli.sb.resources.xml.XmlRepository;
 /**
  * 
  * @author Gilberto Holms
+ * @see <a href="https://gibaholms.wordpress.com/2012/02/23/read-xml-resource-in-oracle-service-bus-11g/">Read XML Resource in Oracle Service Bus 11g</a> 
  *
  */
-//https://gibaholms.wordpress.com/2012/02/23/read-xml-resource-in-oracle-service-bus-11g/
 public class ReadXmlResource {
 
 	public static XmlObject readXml(String xmlRefPath) {
@@ -25,7 +25,7 @@ public class ReadXmlResource {
 			xmlObject = XmlObject.Factory.parse(xmlContent);
 		} catch (NotFoundException e) {
 			e.printStackTrace();
-			throw new RuntimeException("XML Resource not found.");
+			throw new RuntimeException("XML Resource not found.",e);
 		} catch (XmlException e) {
 			e.printStackTrace();
 			throw new RuntimeException("Error parsing XML content.", e);

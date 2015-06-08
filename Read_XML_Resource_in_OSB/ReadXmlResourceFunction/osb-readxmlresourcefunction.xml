@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xpf:xpathFunctions xmlns:xpf="http://www.bea.com/wli/sb/xpath/config">
-	<xpf:category id="Custom Functions">
+	<xpf:category id="Service Bus Functions">
+     <xpf:group id="Resources">
 		<xpf:function>
 			<xpf:name>readXml</xpf:name>
 			<xpf:comment>This function reads a XML Resource file from OSB</xpf:comment>
@@ -11,5 +12,6 @@
 			<xpf:scope>Pipeline</xpf:scope>
 			<xpf:scope>SplitJoin</xpf:scope>
 		</xpf:function>
+	 </xpf:group>
 	</xpf:category>
 </xpf:xpathFunctions>
